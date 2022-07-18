@@ -392,7 +392,12 @@ h2 {
 }
 
 .button-icon_check {
+  height: 30px;
   width: 30px;
+}
+
+.button-icon_envelope {
+  width: 40px;
   height: 30px;
 }
 
@@ -409,7 +414,7 @@ h2 {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -458,6 +463,42 @@ h2 {
   src: url("../fonts/Verdana-Bold.woff2") format("woff2"), url("../fonts/Verdana-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+}
+
+.header {
+  background: #5768CF;
+  background: radial-gradient(circle farthest-corner at top center, #5768CF 0%, #39459D 50%);
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-logo {
+  padding: 35px 0;
+  width: 235px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.header-button {
+  margin-left: 40px;
 }
 
 .lecture {
