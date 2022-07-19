@@ -16,6 +16,17 @@
         width: 30px
         height: 20px
 
+  .footer
+    padding: 60px 0
+    &-right
+      &_phone
+        margin-bottom: 30px
+        font-size: 30px
+      &_address
+        font-size: 22px
+      &_text
+        font-size: 12px
+
 @media (max-width: 835px)
   .button
     margin: 0
@@ -29,7 +40,15 @@
       justify-content: space-evenly
       align-self: center
 
-// @media (max-width: 768px)
+@media (max-width: 768px)
+  .footer
+    padding-top: 55px
+    &-right
+      &_phone
+        margin-bottom: 20px
+        font-size: 24px
+      &_address
+        font-size: 18px
 
 @media (max-width: 683px)
   .button
@@ -48,6 +67,18 @@
     &-logo
       width: 205px
       padding: 30px 0
+
+  .footer
+    padding-top: 50px
+    & .container
+      grid-template-columns: 1fr
+      row-gap: 20px
+    &-left
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      &_logo
+        margin-bottom: 25px
 
 // @media (max-width: 576px)
 
@@ -69,6 +100,19 @@
     &-buttons
       justify-content: space-around
 
+  .footer
+    &-left
+      &_logo
+        margin-bottom: 20px
+        width: 205px
+    &-right
+      &_phone
+        margin-bottom: 15px
+        font-size: 21px
+      &_address
+        margin-bottom: 15px
+        font-size: 16px
+
 @media (max-width: 320px)
   .header
     &-buttons
@@ -77,3 +121,6 @@
         margin-bottom: 10px
         &:last-child
           margin-bottom: 0
+
+  .footer
+    padding-top: 40px
