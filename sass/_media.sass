@@ -1,0 +1,79 @@
+@media (max-width: 1400px)
+  .container
+    width: 90%
+
+// @media (max-width: 1200px)  
+
+@media (max-width: 992px)
+  .button
+    padding: 12px 16px
+    font-size: 18px
+    &-icon
+      &_check
+        width: 25px
+        height: 25px
+      &_envelope
+        width: 30px
+        height: 20px
+
+@media (max-width: 835px)
+  .button
+    margin: 0
+    font-size: 16px
+
+  .header
+    & .container
+      flex-direction: column
+    &-buttons
+      width: 100%
+      justify-content: space-evenly
+      align-self: center
+
+// @media (max-width: 768px)
+
+@media (max-width: 683px)
+  .button
+    padding: 10px 15px
+    font-size: 14px
+    &-icon
+      margin-right: 10px
+      &_check
+        width: 20px
+        height: 20px
+      &_envelope
+        width: 25px
+        height: 15px
+
+  .header
+    &-logo
+      width: 205px
+      padding: 30px 0
+
+// @media (max-width: 576px)
+
+@media (max-width: 460px)
+  .button
+    font-size: 12px
+    &-icon
+      &_check
+        width: 15px
+        height: 15px
+      &_envelope
+        width: 20px
+        height: 14px
+
+  .header
+    &-logo
+      width: 170px
+      padding: 25px 0
+    &-buttons
+      justify-content: space-around
+
+@media (max-width: 320px)
+  .header
+    &-buttons
+      flex-direction: column
+      & a
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 0
