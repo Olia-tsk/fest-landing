@@ -1,0 +1,71 @@
+.hero
+  height: 100%
+  & .container
+    height: 100%
+    display: grid
+    justify-content: space-evenly
+    grid-template-columns: 33.3% 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr minmax(100px, max-content) minmax(100px, max-content) minmax(100px, max-content)
+    grid-template-areas: "rectangle-1 square-s-1 square-s-2 square-l-1 square-l-1" "square-l-2 square-s-3 square-s-4 square-l-1 square-l-1" "square-l-2 square-l-3 square-l-3 square-s-5 column-1" "rectangle-2 square-l-3 square-l-3 square-s-6 column-1"
+
+  &-item
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &--1
+      grid-area: rectangle-1
+      background-image: url('../images/hero-img-1.png')
+    &--2
+      grid-area: square-s-1
+      background-image: url('../images/hero-img-2.png')
+    &--3
+      grid-area: square-s-2
+      background-image: url('../images/hero-img-3.png')
+    &--4
+      grid-area: square-l-1
+      background-image: url('../images/hero-img-4.png')
+    &--5
+      grid-area: square-l-2
+      padding: 35px
+      background-color: #9fc53a
+    &--6
+      grid-area: square-s-3
+      background-image: url('../images/hero-img-6.png')
+    &--7
+      grid-area: square-s-4
+      background-image: url('../images/hero-img-7.png')
+    &--8
+      grid-area: rectangle-2
+      display: flex
+      align-items: center
+      padding: 35px
+      background-color: #652580
+    &--9
+      grid-area: square-l-3
+      background-image: url('../images/hero-img-9.png')
+    &--10
+      grid-area: square-s-5
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #265eac
+    &--11
+      grid-area: column-1
+      background-image: url('../images/hero-img-11.png')
+    &--12
+      grid-area: square-s-6
+      background-image: url('../images/hero-img-12.png')
+
+  &-text
+    color: #ffffff
+    font-size: 27px
+
+  &-date
+    font-size: 26px
+    font-weight: bold
+    color: #ffffff
+
+  &-icon
+    fill: #ffffff
+    width: 70px
+    height: 70px

@@ -2,6 +2,14 @@
   font-weight: 400
   font-family: Verdana, Tahoma, sans-serif
 
+// Обёртка для резинового главного экрана
+.main
+  display: flex
+  flex-direction: column
+  height: 100vh
+  background: #5768CF
+  background: radial-gradient(circle farthest-corner at top center, #5768CF 0%, #39459D 50%)
+
 // body
 //   background-color: #191919
 
@@ -10,6 +18,15 @@ a
 
 h1, h2, p
   margin: 0
+
+h1
+  margin-bottom: 25px
+  font-family: Nekst, sans-serif
+  font-weight: 900
+  text-transform: uppercase
+  font-size: 62px
+  line-height: 55px
+  color: #213385
 
 h2
   margin-bottom: 60px
@@ -20,14 +37,14 @@ h2
   color: #38449c
 
 .button
-  padding: 20px
+  padding: 15px 18px
   font-family: Nekst, sans-serif
   font-weight: 600
   display: flex
   justify-content: center
   align-items: center
   color: #ffffff
-  font-size: 25px
+  font-size: 22px
   cursor: pointer
   &-icon
     flex-shrink: 0
