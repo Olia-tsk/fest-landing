@@ -669,10 +669,7 @@ h2 {
 }
 
 .lecture {
-  padding-top: 60px;
-  padding-left: 131px;
-  padding-right: 72px;
-  padding-bottom: 60px;
+  padding: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,8 +683,7 @@ h2 {
 }
 
 .lecture-main {
-  width: 50%;
-  margin-right: 60px;
+  width: 48%;
   color: #38449c;
   font-family: Nekst, Verdana, sans-serif;
 }
@@ -698,7 +694,6 @@ h2 {
 
 .lecture-main_data {
   margin-bottom: 70px;
-  padding-left: 37px;
   font-weight: 600;
   font-size: 72px;
 }
@@ -750,7 +745,7 @@ h2 {
 }
 
 .lecture-desc {
-  width: 50%;
+  width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,9 +765,5 @@ h2 {
   margin-bottom: 40px;
   font-size: 16px;
   line-height: 19px;
-}
-
-.lecture-desc_button {
-  width: 480px;
 }
 /*# sourceMappingURL=style.css.map */
