@@ -1132,9 +1132,9 @@ h2 {
 
 @media (max-width: 460px) {
   h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    line-height: 25px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 27px;
   }
   .button {
     font-size: 12px;
@@ -1156,7 +1156,7 @@ h2 {
         justify-content: space-around;
   }
   .lecture-main_data {
-    font-size: 26px;
+    font-size: 28px;
   }
   .lecture-main_shadow {
     padding-left: 18px;
@@ -1174,9 +1174,6 @@ h2 {
   }
   .lecture-main_position {
     font-size: 14px;
-  }
-  .lecture-desc_text {
-    font-size: 12px;
   }
   .footer-left_logo {
     margin-bottom: 20px;
