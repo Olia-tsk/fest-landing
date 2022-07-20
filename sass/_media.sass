@@ -1,10 +1,44 @@
 @media (max-width: 1400px)
+  h2
+    font-size: 52px
   .container
     width: 90%
 
-// @media (max-width: 1200px)  
+@media (max-width: 1200px)
+  h2
+    font-size: 46px
+  .lecture
+    &-main
+      &_data
+        font-size: 62px
+      &_shadow
+        margin-bottom: 70px
+        width: 85%
+        height: auto
+        background-color: unset
+        padding-left: 65px
+        &--blue img
+          box-shadow: -55px 35px 0px 10px #7ddcf5
+        &--green img
+          box-shadow: -55px 35px 0px 10px #9fc53a
+        &--violet img
+          box-shadow: -55px 35px 0px 10px #652580
+      &_photo
+        position: relative
+        bottom: 0
+        left: 0
+        width: inherit
+        height: inherit
+      &_subtitle
+        font-size: 32px
+      &_name
+        font-size: 36px
 
 @media (max-width: 992px)
+  h2
+    margin-bottom: 40px
+    font-size: 36px
+    line-height: 45px
   .button
     padding: 12px 16px
     font-size: 18px
@@ -15,7 +49,20 @@
       &_envelope
         width: 30px
         height: 20px
-
+  .lecture
+    &-main
+      width: 46%
+      &_data
+        margin-bottom: 50px
+        font-size: 56px
+      &_subtitle
+        font-size: 29px
+      &_name
+        font-size: 34px
+      &_position
+        font-size: 26px
+    &-desc
+      width: 51%
   .footer
     padding: 60px 0
     &-right
@@ -28,10 +75,13 @@
         font-size: 12px
 
 @media (max-width: 835px)
+  h2
+    margin-bottom: 25px
+    font-size: 32px
+    line-height: 38px
   .button
     margin: 0
     font-size: 16px
-
   .header
     & .container
       flex-direction: column
@@ -39,6 +89,42 @@
       width: 100%
       justify-content: space-evenly
       align-self: center
+  .lecture
+    & .container
+      padding: 45px 0
+      flex-direction: column
+    &-main
+      width: 100%
+      margin-bottom: 30px
+      display: grid
+      grid-template-columns: minmax(100px, 300px) 1fr
+      grid-template-areas: "date date" "photo subtitle" "photo name" "photo position"
+      &_data
+        grid-area: date
+        margin-bottom: 20px
+        font-size: 46px
+      &_shadow
+        grid-area: photo
+        padding-left: 41px
+        margin-bottom: 28px
+        & img
+          box-shadow: -35px 25px 0px 6px
+      &_subtitle
+        grid-area: subtitle
+        align-self: flex-end
+        margin: 0
+        font-size: 26px
+      &_name
+        grid-area: name
+        align-self: center
+        font-size: 32px
+      &_position
+        grid-area: position
+        font-size: 24px
+    &-desc
+      width: 100%
+      &_text
+        margin-bottom: 30px
 
 @media (max-width: 768px)
   .footer
@@ -51,6 +137,10 @@
         font-size: 18px
 
 @media (max-width: 683px)
+  h2
+    margin-bottom: 20px
+    font-size: 26px
+    line-height: 32px
   .button
     padding: 10px 15px
     font-size: 14px
@@ -62,12 +152,27 @@
       &_envelope
         width: 25px
         height: 15px
-
   .header
     &-logo
       width: 205px
       padding: 30px 0
-
+  .lecture
+    & .container
+      padding: 35px 0
+    &-main
+      grid-template-columns: minmax(min-content, 45%) 1fr
+      &_data
+        font-size: 42px
+      &_shadow
+        width: 75%
+      &_photo
+        width: 100%
+      &_subtitle
+        font-size: 21px
+      &_name
+        font-size: 26px
+      &_position
+        font-size: 21px
   .footer
     padding-top: 50px
     & .container
@@ -80,9 +185,35 @@
       &_logo
         margin-bottom: 25px
 
-// @media (max-width: 576px)
+@media (max-width: 576px)
+  h2
+    font-size: 24px
+    line-height: 29px
+  .lecture
+    &-main
+      margin-bottom: 25px
+      &_shadow
+        padding-left: 28px
+        margin-bottom: 15px
+        & img
+          box-shadow: -25px 15px 0px 3px
+      &_data
+        font-size: 36px
+      &_subtitle
+        font-size: 16px
+      &_name
+        font-size: 22px
+      &_position
+        font-size: 16px
+    &-desc
+      &_text
+        font-size: 14px
 
 @media (max-width: 460px)
+  h2
+    margin-bottom: 10px
+    font-size: 20px
+    line-height: 25px
   .button
     font-size: 12px
     &-icon
@@ -92,14 +223,30 @@
       &_envelope
         width: 20px
         height: 14px
-
   .header
     &-logo
       width: 170px
       padding: 25px 0
     &-buttons
       justify-content: space-around
-
+  .lecture
+    &-main
+      &_data
+        font-size: 26px
+      &_shadow
+        padding-left: 18px
+        margin-bottom: 9px
+        & img
+          box-shadow: -15px 10px 0px 2px
+      &_subtitle
+        font-size: 14px
+      &_name
+        font-size: 18px
+      &_position
+        font-size: 14px
+    &-desc
+      &_text
+        font-size: 12px
   .footer
     &-left
       &_logo
@@ -114,6 +261,9 @@
         font-size: 16px
 
 @media (max-width: 320px)
+  h2
+    font-size: 18px
+    line-height: 23px
   .header
     &-buttons
       flex-direction: column
@@ -121,6 +271,21 @@
         margin-bottom: 10px
         &:last-child
           margin-bottom: 0
-
+  .lecture
+    &-main
+      margin-bottom: 15px
+      &_data
+        margin-bottom: 15px
+        font-size: 24px
+      &_subtitle
+        font-size: 12px
+      &_name
+        font-size: 16px
+      &_position
+        font-size: 12px
+    &-desc
+      &_text
+        margin-bottom: 25px
+        line-height: 18px
   .footer
     padding-top: 40px
