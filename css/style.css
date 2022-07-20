@@ -1156,7 +1156,7 @@ h2 {
         justify-content: space-around;
   }
   .lecture-main_data {
-    font-size: 28px;
+    font-size: 30px;
   }
   .lecture-main_shadow {
     padding-left: 18px;
@@ -1167,13 +1167,13 @@ h2 {
             box-shadow: -15px 10px 0px 2px;
   }
   .lecture-main_subtitle {
-    font-size: 14px;
+    font-size: 16px;
   }
   .lecture-main_name {
-    font-size: 18px;
+    font-size: 20px;
   }
   .lecture-main_position {
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer-left_logo {
     margin-bottom: 20px;
@@ -1214,13 +1214,13 @@ h2 {
     font-size: 24px;
   }
   .lecture-main_subtitle {
-    font-size: 12px;
+    font-size: 14px;
   }
   .lecture-main_name {
-    font-size: 16px;
+    font-size: 18px;
   }
   .lecture-main_position {
-    font-size: 12px;
+    font-size: 14px;
   }
   .lecture-desc_text {
     margin-bottom: 25px;
