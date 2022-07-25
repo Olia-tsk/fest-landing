@@ -1050,9 +1050,17 @@ h2 {
     padding-left: 41px;
     margin-bottom: 28px;
   }
-  .lecture-main_shadow img {
-    -webkit-box-shadow: -35px 25px 0px 6px;
-            box-shadow: -35px 25px 0px 6px;
+  .lecture-main_shadow--blue img {
+    -webkit-box-shadow: -35px 25px 0px 6px #7ddcf5;
+            box-shadow: -35px 25px 0px 6px #7ddcf5;
+  }
+  .lecture-main_shadow--green img {
+    -webkit-box-shadow: -35px 25px 0px 6px #9fc53a;
+            box-shadow: -35px 25px 0px 6px #9fc53a;
+  }
+  .lecture-main_shadow--violet img {
+    -webkit-box-shadow: -35px 25px 0px 6px #652580;
+            box-shadow: -35px 25px 0px 6px #652580;
   }
   .lecture-main_subtitle {
     -ms-grid-row: 2;
@@ -1249,9 +1257,17 @@ h2 {
     padding-left: 28px;
     margin-bottom: 15px;
   }
-  .lecture-main_shadow img {
-    -webkit-box-shadow: -25px 15px 0px 3px;
-            box-shadow: -25px 15px 0px 3px;
+  .lecture-main_shadow--blue img {
+    -webkit-box-shadow: -25px 15px 0px 3px #7ddcf5;
+            box-shadow: -25px 15px 0px 3px #7ddcf5;
+  }
+  .lecture-main_shadow--green img {
+    -webkit-box-shadow: -25px 15px 0px 3px #9fc53a;
+            box-shadow: -25px 15px 0px 3px #9fc53a;
+  }
+  .lecture-main_shadow--violet img {
+    -webkit-box-shadow: -25px 15px 0px 3px #652580;
+            box-shadow: -25px 15px 0px 3px #652580;
   }
   .lecture-main_data {
     font-size: 36px;
@@ -1354,9 +1370,17 @@ h2 {
     padding-left: 18px;
     margin-bottom: 9px;
   }
-  .lecture-main_shadow img {
-    -webkit-box-shadow: -15px 10px 0px 2px;
-            box-shadow: -15px 10px 0px 2px;
+  .lecture-main_shadow--blue img {
+    -webkit-box-shadow: -15px 10px 0px 2px #7ddcf5;
+            box-shadow: -15px 10px 0px 2px #7ddcf5;
+  }
+  .lecture-main_shadow--green img {
+    -webkit-box-shadow: -15px 10px 0px 2px #9fc53a;
+            box-shadow: -15px 10px 0px 2px #9fc53a;
+  }
+  .lecture-main_shadow--violet img {
+    -webkit-box-shadow: -15px 10px 0px 2px #652580;
+            box-shadow: -15px 10px 0px 2px #652580;
   }
   .lecture-main_subtitle {
     font-size: 16px;
