@@ -820,6 +820,9 @@ h2 {
   .container {
     width: 90%;
   }
+  .hero .container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -864,6 +867,10 @@ h2 {
 }
 
 @media (max-width: 992px) {
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
   h2 {
     margin-bottom: 40px;
     font-size: 36px;
@@ -880,6 +887,12 @@ h2 {
   .button-icon_envelope {
     width: 30px;
     height: 20px;
+  }
+  .hero-text {
+    font-size: 24px;
+  }
+  .hero-date {
+    font-size: 24px;
   }
   .lecture-main {
     width: 46%;
@@ -916,6 +929,9 @@ h2 {
 }
 
 @media (max-width: 835px) {
+  h1 {
+    font-size: 47px;
+  }
   h2 {
     margin-bottom: 25px;
     font-size: 32px;
@@ -939,6 +955,68 @@ h2 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .hero .container {
+    -ms-grid-columns: 40% 1fr 1fr 1fr;
+        grid-template-columns: 40% 1fr 1fr 1fr;
+    -ms-grid-rows: (4)[25%];
+        grid-template-rows: repeat(25%, 4);
+        grid-template-areas: "square-l-2 square-s-2 square-l-1 square-l-1" "square-l-2 square-s-5 square-l-1 square-l-1" "square-l-2 square-l-3 square-l-3 square-s-1" "rectangle-2 square-l-3 square-l-3 square-s-4";
+  }
+  .hero-item--2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    grid-area: square-s-1;
+    background-position: left;
+  }
+  .hero-item--3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: square-s-2;
+  }
+  .hero-item--4 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: square-l-1;
+  }
+  .hero-item--5 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: square-l-2;
+  }
+  .hero-item--7 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+    grid-area: square-s-4;
+  }
+  .hero-item--8 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: rectangle-2;
+  }
+  .hero-item--9 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: square-l-3;
+  }
+  .hero-item--10 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: square-s-5;
+  }
+  .hero-icon {
+    height: 2.8em;
+  }
+  .hero-text {
+    font-size: 22px;
+  }
+  .hero-date {
+    font-size: 21px;
   }
   .lecture .container {
     padding: 45px 0;
@@ -1009,6 +1087,16 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .hero-text {
+    font-size: 19px;
+  }
+  .hero-date {
+    font-size: 18px;
+  }
   .footer {
     padding-top: 55px;
   }
@@ -1045,6 +1133,46 @@ h2 {
   .header-logo {
     width: 205px;
     padding: 30px 0;
+  }
+  .hero .container {
+    -ms-grid-rows: 40% 30% 30%;
+        grid-template-rows: 40% 30% 30%;
+    -ms-grid-columns: 45% 1fr 1fr;
+        grid-template-columns: 45% 1fr 1fr;
+        grid-template-areas: "square-l-2 square-l-1 square-l-1" "square-l-2 square-s-5 column-1" "rectangle-2 square-l-3 column-1";
+  }
+  .hero-item--4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: square-l-1;
+  }
+  .hero-item--5 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: square-l-2;
+  }
+  .hero-item--8 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: rectangle-2;
+  }
+  .hero-item--9 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: square-l-3;
+  }
+  .hero-item--10 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: square-s-5;
+  }
+  .hero-item--11 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: column-1;
   }
   .lecture .container {
     padding: 35px 0;
@@ -1098,9 +1226,21 @@ h2 {
 }
 
 @media (max-width: 576px) {
+  h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 40px;
+  }
   h2 {
     font-size: 24px;
     line-height: 29px;
+  }
+  .hero .container {
+    -ms-grid-columns: 50% 1fr 1fr;
+        grid-template-columns: 50% 1fr 1fr;
+  }
+  .hero-date {
+    font-size: 16px;
   }
   .lecture-main {
     margin-bottom: 25px;
@@ -1131,13 +1271,15 @@ h2 {
 }
 
 @media (max-width: 460px) {
+  h1 {
+    margin-bottom: 15px;
+    font-size: 34px;
+    line-height: 37px;
+  }
   h2 {
     margin-bottom: 15px;
     font-size: 22px;
     line-height: 27px;
-  }
-  .button {
-    font-size: 12px;
   }
   .button-icon_check {
     width: 15px;
@@ -1154,6 +1296,56 @@ h2 {
   .header-buttons {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .hero .container {
+    -ms-grid-rows: 1fr min-content 1fr;
+        grid-template-rows: 1fr -webkit-min-content 1fr;
+        grid-template-rows: 1fr min-content 1fr;
+    -ms-grid-columns: 55% 45%;
+        grid-template-columns: 55% 45%;
+        grid-template-areas: "square-l-1 square-l-1" "square-l-2 square-l-2" "rectangle-2 square-l-3";
+  }
+  .hero-item--4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: square-l-1;
+  }
+  .hero-item--5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: square-l-2;
+    padding: 25px;
+  }
+  .hero-item--8 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: rectangle-2;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 25px;
+  }
+  .hero-item--9 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: square-l-3;
+  }
+  .hero-item--10 {
+    display: none;
+  }
+  .hero-item--11 {
+    display: none;
+  }
+  .hero-item--12 {
+    display: none;
+  }
+  .hero-text {
+    font-size: 16px;
+  }
+  .hero-text br {
+    display: none;
   }
   .lecture-main_data {
     font-size: 30px;
@@ -1190,6 +1382,11 @@ h2 {
 }
 
 @media (max-width: 320px) {
+  h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 32px;
+  }
   h2 {
     font-size: 18px;
     line-height: 23px;
@@ -1205,6 +1402,18 @@ h2 {
   }
   .header-buttons a:last-child {
     margin-bottom: 0;
+  }
+  .hero-item--5 {
+    padding: 20px;
+  }
+  .hero-item--8 {
+    padding: 20px;
+  }
+  .hero-date {
+    font-size: 14px;
+  }
+  .hero-text {
+    font-size: 14px;
   }
   .lecture-main {
     margin-bottom: 15px;

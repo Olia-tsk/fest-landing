@@ -3,6 +3,12 @@
     font-size: 52px
   .container
     width: 90%
+  .hero
+    & .container
+      width: 100%
+  // .lecture
+  //   & .container
+  //     width: 100%
 
 @media (max-width: 1200px)
   h2
@@ -35,6 +41,9 @@
         font-size: 36px
 
 @media (max-width: 992px)
+  h1
+    font-size: 50px
+    line-height: 50px
   h2
     margin-bottom: 40px
     font-size: 36px
@@ -49,6 +58,11 @@
       &_envelope
         width: 30px
         height: 20px
+  .hero
+    &-text
+      font-size: 24px
+    &-date
+      font-size: 24px
   .lecture
     &-main
       width: 46%
@@ -75,6 +89,8 @@
         font-size: 12px
 
 @media (max-width: 835px)
+  h1
+    font-size: 47px
   h2
     margin-bottom: 25px
     font-size: 32px
@@ -89,6 +105,36 @@
       width: 100%
       justify-content: space-evenly
       align-self: center
+  .hero
+    & .container
+      grid-template-columns: 40% 1fr 1fr 1fr
+      grid-template-rows: repeat(25%, 4)
+      grid-template-areas: "square-l-2 square-s-2 square-l-1 square-l-1" "square-l-2 square-s-5 square-l-1 square-l-1" "square-l-2 square-l-3 square-l-3 square-s-1" "rectangle-2 square-l-3 square-l-3 square-s-4"
+    &-item
+      &--2
+        grid-area: square-s-1
+        background-position: left
+      &--3
+        grid-area: square-s-2
+      &--4
+        grid-area: square-l-1
+      &--5
+        grid-area: square-l-2
+      &--7
+        grid-area: square-s-4
+      &--8
+        grid-area: rectangle-2
+      &--9
+        grid-area: square-l-3
+      &--10
+        grid-area: square-s-5
+    &-icon
+      height: 2.8em
+    &-text
+      font-size: 22px
+    &-date
+      font-size: 21px
+
   .lecture
     & .container
       padding: 45px 0
@@ -127,6 +173,14 @@
         margin-bottom: 30px
 
 @media (max-width: 768px)
+  h1
+    font-size: 42px
+    line-height: 46px
+  .hero
+    &-text
+      font-size: 19px
+    &-date
+      font-size: 18px
   .footer
     padding-top: 55px
     &-right
@@ -156,6 +210,24 @@
     &-logo
       width: 205px
       padding: 30px 0
+  .hero
+    & .container
+      grid-template-rows: 40% 30% 30%
+      grid-template-columns: 45% 1fr 1fr
+      grid-template-areas: "square-l-2 square-l-1 square-l-1" "square-l-2 square-s-5 column-1" "rectangle-2 square-l-3 column-1"
+    &-item
+      &--4
+        grid-area: square-l-1
+      &--5
+        grid-area: square-l-2
+      &--8
+        grid-area: rectangle-2
+      &--9
+        grid-area: square-l-3
+      &--10
+        grid-area: square-s-5
+      &--11
+        grid-area: column-1
   .lecture
     & .container
       padding: 35px 0
@@ -186,9 +258,18 @@
         margin-bottom: 25px
 
 @media (max-width: 576px)
+  h1
+    margin-bottom: 20px
+    font-size: 36px
+    line-height: 40px
   h2
     font-size: 24px
     line-height: 29px
+  .hero
+    & .container
+      grid-template-columns: 50% 1fr 1fr
+    &-date
+      font-size: 16px
   .lecture
     &-main
       margin-bottom: 25px
@@ -210,12 +291,16 @@
         font-size: 14px
 
 @media (max-width: 460px)
+  h1
+    margin-bottom: 15px
+    font-size: 34px
+    line-height: 37px
   h2
     margin-bottom: 15px
     font-size: 22px
     line-height: 27px
   .button
-    font-size: 12px
+    // font-size: 12px
     &-icon
       &_check
         width: 15px
@@ -229,6 +314,34 @@
       padding: 25px 0
     &-buttons
       justify-content: space-around
+  .hero
+    & .container
+      grid-template-rows: 1fr min-content 1fr
+      grid-template-columns: 55% 45%
+      grid-template-areas: "square-l-1 square-l-1" "square-l-2 square-l-2" "rectangle-2 square-l-3"
+    &-item
+      &--4
+        grid-area: square-l-1
+      &--5
+        grid-area: square-l-2
+        padding: 25px
+      &--8
+        grid-area: rectangle-2
+        align-items: flex-start
+        padding: 25px
+      &--9
+        grid-area: square-l-3
+      &--10
+        display: none
+      &--11
+        display: none
+      &--12
+        display: none
+    &-text
+      font-size: 16px
+      & br
+        display: none
+
   .lecture
     &-main
       &_data
@@ -258,6 +371,10 @@
         font-size: 16px
 
 @media (max-width: 320px)
+  h1
+    margin-bottom: 10px
+    font-size: 28px
+    line-height: 32px
   h2
     font-size: 18px
     line-height: 23px
@@ -268,6 +385,16 @@
         margin-bottom: 10px
         &:last-child
           margin-bottom: 0
+  .hero
+    &-item
+      &--5
+        padding: 20px
+      &--8
+        padding: 20px
+    &-date
+      font-size: 14px
+    &-text
+      font-size: 14px
   .lecture
     &-main
       margin-bottom: 15px
