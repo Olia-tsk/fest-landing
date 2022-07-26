@@ -813,6 +813,271 @@ h2 {
   font-size: 26px;
 }
 
+.button {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+}
+
+.header-button .button-icon, .footer-button .button-icon {
+  -webkit-transition: all 2s cubic-bezier(0, 0.22, 0.3, 1);
+  transition: all 2s cubic-bezier(0, 0.22, 0.3, 1);
+}
+
+.header-button:before, .footer-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header-button span, .footer-button span {
+  color: #ffffff;
+  font-size: 22px;
+  z-index: 10;
+  -webkit-transition: all 2.5s cubic-bezier(0.1, 0.22, 0.3, 1);
+  transition: all 2.5s cubic-bezier(0.1, 0.22, 0.3, 1);
+}
+
+.header-button .back, .footer-button .back {
+  left: -50%;
+  top: -50%;
+  background: #ffffff;
+  position: absolute;
+  width: 0;
+  height: 0;
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  border-radius: 50%;
+  z-index: 5;
+  -webkit-transition: all 2.5s cubic-bezier(0.1, 0.22, 0.3, 1);
+  transition: all 2.5s cubic-bezier(0.1, 0.22, 0.3, 1);
+}
+
+.header-button:hover .back, .footer-button:hover .back {
+  width: 200%;
+  height: 200%;
+}
+
+.header-button.button--blue:hover span, .footer-button.button--blue:hover span {
+  color: #7ddcf5;
+}
+
+.header-button.button--blue:hover .button-icon, .footer-button.button--blue:hover .button-icon {
+  fill: #7ddcf5;
+  z-index: 20;
+}
+
+.header-button.button--green:hover span, .footer-button.button--green:hover span {
+  color: #9fc53a;
+}
+
+.header-button.button--green:hover .button-icon, .footer-button.button--green:hover .button-icon {
+  fill: #9fc53a;
+  z-index: 20;
+}
+
+.hero-link:hover {
+  -webkit-animation: heartbeat 0.2s infinite;
+          animation: heartbeat 0.2s infinite;
+}
+
+.hero-icon {
+  padding: 0.8rem 2rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-animation: jittery 4s infinite;
+          animation: jittery 4s infinite;
+}
+
+@-webkit-keyframes jittery {
+  5%,
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  15% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  20% {
+    -webkit-transform: scale(1.15) rotate(-5deg);
+            transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    -webkit-transform: scale(1.15) rotate(5deg);
+            transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    -webkit-transform: scale(1.15) rotate(-3deg);
+            transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    -webkit-transform: scale(1.15) rotate(2deg);
+            transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: scale(1.15) rotate(0);
+            transform: scale(1.15) rotate(0);
+  }
+}
+
+@keyframes jittery {
+  5%,
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  15% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  20% {
+    -webkit-transform: scale(1.15) rotate(-5deg);
+            transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    -webkit-transform: scale(1.15) rotate(5deg);
+            transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    -webkit-transform: scale(1.15) rotate(-3deg);
+            transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    -webkit-transform: scale(1.15) rotate(2deg);
+            transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: scale(1.15) rotate(0);
+            transform: scale(1.15) rotate(0);
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes heartbeat {
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.lecture-desc_button {
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+  overflow: hidden;
+}
+
+.lecture-desc_button .button-icon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lecture-desc_button.button--violet:hover .button-icon {
+  fill: #213385;
+  z-index: 20;
+}
+
+.lecture-desc_button.button--blue:hover .button-icon {
+  fill: #213385;
+  z-index: 20;
+}
+
+.lecture-desc_button.button--green:hover .button-icon {
+  fill: #213385;
+  z-index: 20;
+}
+
+.lecture-desc_button:hover {
+  color: #213385;
+  background: transparent;
+}
+
+.lecture-desc_button:hover::before {
+  top: calc(100% - 2px);
+  background: #213385;
+  z-index: 5;
+}
+
+.lecture-desc_button:hover::after {
+  left: 0;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  z-index: 5;
+}
+
+.lecture-desc_button:hover span {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.lecture-desc_button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lecture-desc_button::after {
+  content: "";
+  position: absolute;
+  top: calc(-100% + 2px);
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #213385;
+  z-index: -1;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lecture-desc_button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid #213385;
+  border-right: 2px solid #213385;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+}
+
 @media (max-width: 1400px) {
   h2 {
     font-size: 52px;
