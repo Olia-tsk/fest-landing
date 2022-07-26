@@ -1568,6 +1568,9 @@ h2 {
     font-size: 22px;
     line-height: 27px;
   }
+  .header .container {
+    width: 100%;
+  }
   .header-logo {
     width: 170px;
     padding: 25px 0;
