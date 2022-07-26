@@ -1145,6 +1145,9 @@ h2 {
     padding: 12px 16px;
     font-size: 18px;
   }
+  .button span {
+    font-size: 18px;
+  }
   .button-icon_check {
     width: 25px;
     height: 25px;
@@ -1204,6 +1207,9 @@ h2 {
   }
   .button {
     margin: 0;
+    font-size: 16px;
+  }
+  .button span {
     font-size: 16px;
   }
   .header .container {
