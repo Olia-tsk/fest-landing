@@ -1078,6 +1078,53 @@ h2 {
   transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
 }
 
+@media (max-width: 768px) {
+  .lecture-desc_button:hover {
+    color: #ffffff;
+  }
+  .lecture-desc_button:hover .button-icon {
+    fill: #ffffff !important;
+  }
+  .lecture-desc_button::before {
+    content: none;
+  }
+  .lecture-desc_button::after {
+    content: none;
+  }
+  .lecture-desc_button span {
+    display: none;
+  }
+  .lecture-desc_button.button--violet {
+    background-color: #652580;
+  }
+  .lecture-desc_button.button--blue {
+    background-color: #7ddcf5;
+  }
+  .lecture-desc_button.button--green {
+    background-color: #9fc53a;
+  }
+  .header-button.button--blue:hover span, .footer-button.button--blue:hover span {
+    color: #ffffff;
+  }
+  .header-button.button--blue:hover .button-icon, .footer-button.button--blue:hover .button-icon {
+    fill: #ffffff;
+    z-index: 20;
+  }
+  .header-button.button--green:hover span, .footer-button.button--green:hover span {
+    color: #ffffff;
+  }
+  .header-button.button--green:hover .button-icon, .footer-button.button--green:hover .button-icon {
+    fill: #ffffff;
+    z-index: 20;
+  }
+  .header-button::before, .footer-button::before {
+    content: none;
+  }
+  .header-button .back, .footer-button .back {
+    display: none;
+  }
+}
+
 @media (max-width: 1400px) {
   h2 {
     font-size: 52px;

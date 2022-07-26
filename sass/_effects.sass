@@ -160,3 +160,46 @@
         transform-origin: top
         transform: scaleY(0)
         transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1)
+
+// > Отключаем эффекты для планшетов и мобильных телефонов
+@media (max-width: 768px)
+  .lecture
+    &-desc
+      &_button
+        &:hover
+          color: #ffffff
+          & .button-icon
+            fill: #ffffff !important
+        &::before
+          content: none
+        &::after
+          content: none
+        & span
+          display: none
+        &.button--violet
+          background-color: #652580
+        &.button--blue
+          background-color: #7ddcf5
+        &.button--green
+          background-color: #9fc53a
+
+  .header, .footer
+    &-button
+      &.button--blue
+        &:hover
+          & span
+            color: #ffffff
+          & .button-icon
+            fill: #ffffff
+            z-index: 20
+      &.button--green
+        &:hover
+          & span
+            color: #ffffff
+          & .button-icon
+            fill: #ffffff
+            z-index: 20
+      &::before
+        content: none
+      & .back
+        display: none
