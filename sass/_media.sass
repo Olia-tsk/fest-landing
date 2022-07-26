@@ -54,7 +54,7 @@
         height: 25px
       &_envelope
         width: 30px
-        height: 20px
+        height: 30px
   .hero
     &-text
       font-size: 24px
@@ -205,7 +205,7 @@
         height: 20px
       &_envelope
         width: 25px
-        height: 15px
+        height: 25px
   .header
     &-logo
       width: 205px
@@ -306,17 +306,21 @@
   .button
     &-icon
       &_check
-        width: 15px
-        height: 15px
+        // width: 15px
+        // height: 15px
       &_envelope
-        width: 20px
-        height: 14px
+        // width: 20px
+        // height: 14px
   .header
     &-logo
       width: 170px
       padding: 25px 0
     &-buttons
+      flex-direction: column
       justify-content: space-around
+    &-button
+      &.button--blue
+        margin-bottom: 15px
   .hero
     & .container
       grid-template-rows: 1fr min-content 1fr
