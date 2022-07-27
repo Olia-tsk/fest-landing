@@ -1637,8 +1637,8 @@ h2 {
     -ms-grid-rows: 1fr min-content 1fr;
         grid-template-rows: 1fr -webkit-min-content 1fr;
         grid-template-rows: 1fr min-content 1fr;
-    -ms-grid-columns: 55% 45%;
-        grid-template-columns: 55% 45%;
+    -ms-grid-columns: 56% 44%;
+        grid-template-columns: 56% 44%;
         grid-template-areas: "square-l-1 square-l-1" "square-l-2 square-l-2" "rectangle-2 square-l-3";
   }
   .hero-item--4 {
